@@ -1,0 +1,86 @@
+.phone-input {
+	display: flex;
+	position: relative;
+
+	$block: &;
+
+	&__country-selector {
+		width: 74px;
+		height: $controlHeight - 2;
+		top: 1px;
+		left: 1px;
+		background-color: #f9f9f9;
+		border-radius: 5px 0 0 5px;
+		border-right: 1px solid $mainBorderColor;
+		position: absolute;
+		cursor: pointer;
+
+		#{$block}--opened & {
+			border-radius: 5px 0 0 0;
+		}
+	}
+
+	&__countries-list {
+		position: absolute;
+		border-radius: 0 0 5px 5px;
+		border: 1px solid $mainBorderColor;
+		border-top: 0px;
+		background: #fff;
+		width: 100%;
+		z-index: 1;
+		top: $controlHeight;
+		margin-top: -1px;
+		margin-left: -1px;
+	}
+
+	&__country {
+		padding: 5px 10px;
+		height: 25px;
+	}
+
+	&__flag {
+		width: 27px;
+		height: 20px;
+
+		&--heading {
+			position: absolute;
+			top: 11px;
+			left: 11px;
+		}
+	}
+
+	&__arrow {
+		width: 13px;
+		height: 15px;
+		color: $mainBorderColor;
+		position: absolute;
+		top: 15px;
+		right: 12px;
+	}
+
+	&__prefix {
+		position: absolute;
+		top: 10px;
+		left: 90px;
+		font-size: 18px;
+	}
+
+	&__input {
+		height: $controlHeight;
+		border-radius: 5px;
+		border: 1px solid $mainBorderColor;
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 120px;
+		font-size: 18px;
+
+		#{$block}--opened & {
+			border-radius: 5px 5px 5px 0;
+		}
+
+		&:focus, &:active {
+			border-color: $mainBlueColor;
+			outline: none;
+		}
+	}
+}

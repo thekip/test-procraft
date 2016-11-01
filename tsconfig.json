@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "CommonJS",
+    "allowJs": true,
+    "removeComments": false,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true
+  },
+  "files": [
+    "typings/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "cacheDirectory": ".tscache",
+    "emitRequireType": true
+  }
+}

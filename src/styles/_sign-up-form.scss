@@ -1,0 +1,107 @@
+.sign-up-form {
+	max-width: 370px;
+	padding: 0 15px;
+
+	&__intro-text {
+		color: $mainTextColor;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	&__controls {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__control {
+		flex: 0 0 auto;
+		margin-bottom: 20px;
+		position: relative;
+
+		// todo: write a calculation of full grid
+		&--span3 {
+			width: 49%;
+		}
+
+		&--span6 {
+			width: 100%;
+		}
+	}
+
+	&__control-label {
+		color: #bbbbbb;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	&__control-input {
+		width: 100%;
+		border-radius: 5px;
+		border: solid 1px $mainBorderColor;
+		color: #505151;
+		padding: 0 15px;
+		height: $controlHeight;
+		box-sizing: border-box;
+		line-height: $controlHeight;
+
+		&:focus {
+			border-color: $mainBlueColor;
+			outline: none;
+		}
+
+		&[aria-expanded="true"] {
+			z-index: 2;
+			position: relative;
+		}
+	}
+}
+
+.btn {
+	border-radius: 5px;
+	height: $controlHeight;
+	line-height: $controlHeight;
+	padding: 0 15px;
+	border: 0;
+
+	&--primary {
+		background-color: $mainBlueColor;
+		color: #fff;
+	}
+}
+
+
+.dropdown-menu {
+	position: absolute;
+	padding: 15px 0 10px 0;
+	border-radius: 0 0 5px 5px;
+	border: 1px solid $mainBorderColor;
+	border-top: 0px;
+	background: #fff;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 1;
+	margin-top: -3px;
+
+	li {
+		padding: 5px 15px;
+		list-style: none;
+		line-height: 25px;
+
+		a, a:visited {
+			color: $mainTextColor;
+			text-decoration: none;
+		}
+
+		&.active a {
+			color: $mainBlueColor;
+		}
+	}
+}

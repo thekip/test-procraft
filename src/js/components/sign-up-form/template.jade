@@ -1,0 +1,32 @@
+include /node_modules/bem-jade/bem
+
++b.sign-up-form
+  +e.intro-text #[strong Зарегистрируйтесь] и начните продавать услуги через интернет сегодня
+
+  form
+    +e.controls
+      +e.control--span3
+        +e.control-label Имя
+        +e('input').control-input(type="text" placeholder="Иван" name="given-name")
+
+      +e.control--span3
+        +e.control-label Фамилия
+        +e('input').control-input(type="text" placeholder="Иванов" name="family-name")
+
+      +e.control--span6
+        +e.control-label Профессия
+        +e('input').control-input(
+          type="text"
+          placeholder="Водитель-грузчик"
+          name="family-name"
+          uib-typeahead="profession for profession in ctrl.professions | filter:$viewValue | limitTo:8"
+          ng-model="profession"
+        )
+
+      +e.control--span6
+        +e.control-label Телефон
+        phone-input
+
+
+    +e.actions
+      +b('button')(type="submit").btn--primary Зарегистрироваться

@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 16" style="enable-background:new 0 0 24 16;" xml:space="preserve">
+<style type="text/css">
+	.flag-uk-st0{fill:#FFFFFF;}
+	.flag-uk-st1{fill:#2A3378;}
+	.flag-uk-st2{fill:#BD1F3A;}
+</style>
+<rect class="flag-uk-st0" width="24" height="16"/>
+<g>
+	<polygon class="flag-uk-st1" points="10.2,5.4 10.2,0 1.9,0 	"/>
+	<polygon class="flag-uk-st1" points="18.3,5.8 24,5.8 24,2.1 	"/>
+	<polygon class="flag-uk-st1" points="24,14.2 24,10.5 18.3,10.5 	"/>
+	<polygon class="flag-uk-st1" points="10.2,16 10.2,10.9 2.3,16 	"/>
+	<polygon class="flag-uk-st1" points="14,16 21.9,16 14,10.9 	"/>
+	<polygon class="flag-uk-st1" points="0,10.5 0,14.3 5.9,10.5 	"/>
+	<polygon class="flag-uk-st1" points="0,2 0,5.8 5.9,5.8 	"/>
+	<polygon class="flag-uk-st1" points="14,0 14,5.4 22.4,0 	"/>
+</g>
+<g>
+	<polygon class="flag-uk-st2" points="23.5,0 14.4,5.8 16.1,5.8 24,0.7 24,0 	"/>
+	<polygon class="flag-uk-st2" points="15.7,10.5 24,15.8 24,14.8 17.4,10.5 	"/>
+	<polygon class="flag-uk-st2" points="8.8,5.8 0,0.2 0,1.2 7.1,5.8 	"/>
+	<polygon class="flag-uk-st2" points="0,15.9 0,16 1.5,16 10,10.5 8.4,10.5 	"/>
+	<polygon class="flag-uk-st2" points="13.2,0 11,0 11,6.7 0,6.7 0,9.6 11,9.6 11,16 13.2,16 13.2,9.6 24,9.6 24,6.7 13.2,6.7 	"/>
+</g>
+</svg>

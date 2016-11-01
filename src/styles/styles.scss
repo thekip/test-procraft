@@ -1,0 +1,20 @@
+@import "normalize";
+
+$mainTextColor: #4a4a4a;
+$mainBlueColor: #0880fd;
+$mainBorderColor: #c8c8c8;
+$controlHeight: 44px;
+
+body {
+	padding: 15px 0;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+
+svg {
+	fill: currentColor;
+}
+
+@import "sign-up-form";
+@import "phone-input";
+

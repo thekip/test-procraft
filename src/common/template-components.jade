@@ -1,0 +1,8 @@
+mixin icon(id)
+  - var dynamic = false;
+  - if (id && (id.indexOf('{{') !== -1)) {
+  -   dynamic = '#' + id
+  -   id = ''
+  - }
+  +e('svg')&attributes(attributes)
+    use(xlink:href='#'+id, di-xlink-href=dynamic)

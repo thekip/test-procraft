@@ -1,0 +1,14 @@
+include /node_modules/bem-jade/bem
+include ../../../common/template-components
+
++b('label').phone-input(ng-class="{'phone-input--opened': ctrl.isListOpened}")
+  +e('div').country-selector(ng-click="ctrl.toggleList()")
+    +icon('{{ctrl.icon}}').flag--heading
+    +icon('arrow-bottom').arrow
+
+    +e.countries-list(ng-show="ctrl.isListOpened")
+      +e.country(ng-repeat="country in ctrl.countries" ng-click="ctrl.setCountry(country)")
+        +icon('{{country.icon}}').flag
+
+  +e('div').prefix(ng-bind="ctrl.code")
+  +e('input').input(placeholder="495 123-45-67" type="phone")
