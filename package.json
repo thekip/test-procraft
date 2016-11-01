@@ -7,6 +7,7 @@
     "start": "npm run server:prod",
     "server:dev": "webpack-dev-server --config webpack.config.dev.js --progress --profile --colors --display-error-details --display-cached",
     "server:prod": "http-server dst --cors",
+    "build": "webpack --config webpack.config.dev.js --progress --profile --colors --display-error-details --display-cached",
     "postinstall": "typings install"
   },
   "author": "",

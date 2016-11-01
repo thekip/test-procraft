@@ -2,8 +2,16 @@
 
 ```
 npm i
+npm run build
+```
+
+And then: 
+
+```
 npm start
 ```
+
+To start the web server.
 
 Technology stack used: 
 
