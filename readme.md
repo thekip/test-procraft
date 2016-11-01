@@ -2,7 +2,7 @@
 
 ```
 npm i
-npm run
+npm start
 ```
 
 Technology stack used: 
